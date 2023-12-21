@@ -53,3 +53,89 @@
 .card-link{
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .students-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 35px 17px;
+  }
+}
+
+.form-modal{
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fullname-div .fullname-input{
+  margin-left: 15px;
+  border-radius: 10px ;
+  border-color: rgb(15, 222, 36);
+  box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.fullname-div .fullname-input:hover{
+  transition: transform .3s;
+  transform: scale(1.07);
+}
+
+.purpose-div .purpose-input{
+  margin-left: 15px;
+  border-radius: 10px ;
+  border-color: rgb(15, 222, 36);
+  box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.purpose-div .purpose-input:hover{
+  transition: transform .3s;
+  transform: scale(1.07);
+}
+
+.outdate-div .outdate-input{
+  margin-left: 15px;
+  border-radius: 10px ;
+  border-color: rgb(15, 222, 36);
+  box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.outdate-div .outdate-input:hover{
+  transition: transform .3s;
+  transform: scale(1.07);
+}
+
+.outtime-div .outtime-input{
+  margin-left: 15px;
+  border-radius: 10px ;
+  border-color: rgb(15, 222, 36);
+  box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.outtime-div .outtime-input:hover{
+  transition: transform .3s;
+  transform: scale(1.07);
+}
+
+.outpass-submit-btn{
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(20, 152, 33);
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(174, 161, 192, 0.7), 0 6px 20px 0 rgba(174, 161, 192, 0.7);
+  cursor: pointer;
+  color: beige;
+}
+
+.outpass-submit-btn:hover{
+  transition: transform .3s;
+  transform: scale(1.07); 
+}

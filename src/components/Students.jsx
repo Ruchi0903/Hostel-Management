@@ -1,14 +1,39 @@
 import React, { useState } from "react";
 import "../styles/Students.css";
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import TimePicker from "react-time-picker";
-import 'react-time-picker/dist/TimePicker.css';
-import 'react-clock/dist/Clock.css';
+import "react-time-picker/dist/TimePicker.css";
+import "react-clock/dist/Clock.css";
 
 const Students = () => {
+  // State for form fields
+  const [fullName, setFullName] = useState("");
+  const [purpose, setPurpose] = useState("");
+  const [outDate, setOutDate] = useState("");
+  const [outTime, setOutTime] = useState("");
+
+  // Function to handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Do something with the form data, e.g., send it to the server
+    console.log("Form submitted:", {
+      fullName,
+      purpose,
+      outDate,
+      outTime,
+    });
+
+    // Reset form fields after submission
+    setFullName("");
+    setPurpose("");
+    setOutDate("");
+    setOutTime("");
+  };
+
   const [modalVisible, setModalVisible] = useState(false);
-  const [time, setTime] = useState('10:00');
+  const [time, setTime] = useState("10:00");
 
   const openModal = () => {
     console.log("Opening modal");
@@ -21,13 +46,13 @@ const Students = () => {
     setModalVisible(false);
   };
 
-  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedDate, setSelectedDate] = useState("");
   const [date, setDate] = useState(new Date());
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Selected Date:', selectedDate);
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Selected Date:", selectedDate);
+  // };
 
   return (
     <div className="main-std-div">
@@ -46,38 +71,82 @@ const Students = () => {
       <div className="students-div">
         {/* Modal */}
         {modalVisible && (
-          <div className={`stud-modal ${modalVisible ? "active" : ""}`} onClick={closeModal}>
-            <div className="stud-modal-content" onClick={(e) => e.stopPropagation()}>
+          <div
+            className={`stud-modal ${modalVisible ? "active" : ""}`}
+            onClick={closeModal}
+          >
+            <div
+              className="stud-modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
               {/* close button */}
-              <span className="close" onClick={closeModal}>&times;</span>
+              <span className="close" onClick={closeModal}>
+                &times;
+              </span>
 
               {/* FORM FILLING */}
-              <form onSubmit={handleSubmit}>
-              <h3>Fill The Form</h3>
+              <div>
+                <h2 className="outpass-modal">College Outpass Form</h2>
+                <form className="form-modal" onSubmit={handleSubmit}>
+                  {/* FULL NAME */}
+                  <div className="fullname-div">
+                    <label>
+                      Full Name:
+                      <input
+                        className="fullname-input"
+                        type="text"
+                        value={fullName}
+                        onChange={(e) => setFullName(e.target.value)}
+                      />
+                    </label>
+                  </div>
+                  <br />
 
-              {/* DATE */}
-              <label>
-                Date of Outing:
-              </label>
-                <DatePicker selected={date} onChange={(date) => setDate(date)} />
-                <br />
+                  {/* PURPOSE */}
+                  <div className="purpose-div">
+                    <label>
+                      Purpose:
+                      <input
+                        className="purpose-input"
+                        type="text"
+                        value={purpose}
+                        onChange={(e) => setPurpose(e.target.value)}
+                      />
+                    </label>
+                  </div>
+                  <br />
 
-                {/* TIME OF DEPARTURE */}
-                <label>
-                  Time of Departure:
-                </label>
-                <TimePicker onChange={setTime} value={time} />
-                <br />
+                  {/* OUT DATE */}
+                  <div className="outdate-div">
+                    <label>
+                      Out Date:
+                      <input
+                        className="outdate-input"
+                        type="date"
+                        value={outDate}
+                        onChange={(e) => setOutDate(e.target.value)}
+                      />
+                    </label>
+                  </div>
+                  <br />
 
-                {/* TIME OF ARRIVAL */}
-                <label>
-                  Time of Arrival:
-                </label>
-                <TimePicker onChange={setTime} value={time} />
-                <br />
+                  <div className="outtime-div">
+                    <label>
+                      Out Time:
+                      <input
+                        className="outtime-input"
+                        type="time"
+                        value={outTime}
+                        onChange={(e) => setOutTime(e.target.value)}
+                      />
+                    </label>
+                  </div>
 
-              </form>
+                  <br />
 
+                  <button className="outpass-submit-btn" type="submit">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
         )}
