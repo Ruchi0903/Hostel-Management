@@ -1,0 +1,127 @@
+.signUp-form {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 35%;
+}
+
+.who-are-you{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+}
+
+.who-are-you > p{
+    margin-top: 15px;
+}
+
+.form {
+  border-style: solid;
+  margin-top: 40px;
+  margin-left: 10%;
+  width: 450px;
+  height: 500px;
+}
+
+.details-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.username-div{
+    margin-bottom: 30px;
+}
+
+.username-div .username-input{
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(15, 222, 36);
+    box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.username-div .username-input:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.email-div{
+    margin-bottom: 30px;
+    margin-right: 32px;
+}
+
+.email-div .email-input{
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(15, 222, 36);
+    box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.email-div .email-input:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.password-div{
+    margin-right: 8px;
+}
+
+.password-div .password-input {
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(15, 222, 36);
+    box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.password-div .password-input:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-btn {
+  margin-right: 20px;
+  margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(20, 152, 33);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(174, 161, 192, 0.7), 0 6px 20px 0 rgba(174, 161, 192, 0.7);
+    cursor: pointer;
+    color: beige;
+}
+
+.signup-btn:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.login-btn{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(20, 152, 33);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(174, 161, 192, 0.7), 0 6px 20px 0 rgba(174, 161, 192, 0.7);
+    cursor: pointer;
+    color: beige;
+}
+
+.login-btn:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}

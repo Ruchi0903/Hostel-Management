@@ -1,0 +1,116 @@
+.login-form{
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 35%;
+}
+
+
+.loginform {
+  border-style: solid;
+  margin-top: 40px;
+  margin-left: 10%;
+  width: 450px;
+  height: 500px;
+}
+
+.logindetails-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.loginusername-div{
+    margin-bottom: 30px;
+}
+
+.loginusername-div .loginusername-input{
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(15, 222, 36);
+    box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.loginusername-div .loginusername-input:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.loginemail-div{
+    margin-bottom: 30px;
+    margin-right: 32px;
+}
+
+.loginemail-div .loginemail-input{
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(15, 222, 36);
+    box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.loginemail-div .loginemail-input:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.loginpassword-div{
+    margin-right: 8px;
+}
+
+.loginpassword-div .loginpassword-input {
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(15, 222, 36);
+    box-shadow: 0 4px 4px 0 rgba(174, 161, 192, 0.7), 0 4px 4px 0 rgba(174, 161, 192, 0.7);
+}
+
+.loginpassword-div .loginpassword-input:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.lgnbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.lgnsignup-btn {
+  margin-right: 20px;
+  margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(20, 152, 33);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(174, 161, 192, 0.7), 0 6px 20px 0 rgba(174, 161, 192, 0.7);
+    cursor: pointer;
+    color: beige;
+}
+
+.lgnsignup-btn:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
+
+.lgnlogin-btn{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(20, 152, 33);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(174, 161, 192, 0.7), 0 6px 20px 0 rgba(174, 161, 192, 0.7);
+    cursor: pointer;
+    color: beige;
+}
+
+.lgnlogin-btn:hover{
+    transition: transform .3s;
+    transform: scale(1.07); 
+}
